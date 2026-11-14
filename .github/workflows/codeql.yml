@@ -43,6 +43,9 @@ jobs:
       actions: read
       contents: read
 
+    # Custom timeout to prevent runaway CI consumption
+    timeout-minutes: 60
+
     strategy:
       fail-fast: false
       matrix:
